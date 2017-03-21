@@ -177,16 +177,12 @@ gdf.shape
 
 ```python
 geometry = GeoSeries([Point(x,y) for x,y in zip(df.dropoff_longitude, df.dropoff_latitude)])
-#fuck['geometry'] = geometry
-#fuck.crs = {'init': 'epsg:4326'}
 crs = {'init': 'epsg:4326'}
-#fuck = fuck.drop(['pickup_latitude', 'pickup_longitude'], axis=1)
 geo_df = GeoDataFrame(df , crs=crs, geometry=geometry)
 ```
 
 
 ```python
-#fuck['contains'] = fuck['point'].map(lambda x: True if hulls.contains(x) == hulls)
 geo_df.shape
 ```
 
@@ -385,8 +381,8 @@ for i in range(0,266):
 
 
 ```python
-for i in range()
-fuck.geometery.within(gdf.geometry[i])
+#for i in range()
+
 ```
 
 
