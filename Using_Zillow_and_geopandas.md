@@ -362,7 +362,6 @@ geo_df.head()
 geo_df['Dropoff_burough'] = "NA"
 brooklen = gdf.geometry[1]
 for i in range(0,266):
-    #gdf.geometry[i].contains(fuck.geometry)
     k = 0
     for j in geo_df.geometry.within(gdf.geometry[i]):
         #print(j)
